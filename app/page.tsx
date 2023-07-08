@@ -21,7 +21,8 @@ export default function Home() {
       <div className="lg:absolute bg-green-40 relative lg:ml-8 lg:mr-auto mx-auto max-w-2xl my-16 sm:my-28 lg:my-36 ">
         <div className="text-left">
           <h1 className="text-4xl font-montserrat font-bold tracking-tight text-gray-900 dark:invert sm:text-6xl">
-            Your apparel shopper, Your apparel, your way, Wear your confidence
+            {/* Your apparel shopper, Your apparel, your way, Wear your confidence */}
+            Wear your confidence
             {/* We&apos;d love to learn from you. Express your interest in helping us shape the future of  */}
           </h1>
           <p className=" mt-6 text-lg leading-8 text-gray-400">
