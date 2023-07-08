@@ -20,7 +20,7 @@ export default function Home() {
     <div className="relative w-screen overflow-x-clip isolate px-6 pt-14 lg:px-8">
       <div className="lg:absolute bg-green-40 relative lg:ml-8 lg:mr-auto mx-auto max-w-2xl my-16 sm:my-28 lg:my-36 ">
         <div className="text-left">
-          <h1 className="text-4xl font-montserrat font-bold tracking-tight text-gray-900 dark:invert sm:text-6xl">
+          <h1 className="text-4xl font-montserrat font-bold tracking-tight text-gray-900 invert sm:text-6xl">
             {/* Your apparel shopper, Your apparel, your way, Wear your confidence */}
             Wear your confidence
             {/* We&apos;d love to learn from you. Express your interest in helping us shape the future of  */}
@@ -30,12 +30,9 @@ export default function Home() {
             from the comfort of your home.
           </p>
           <div className="hidden sm:mb-8 sm:flex sm:justify-center">
-            <div className="relative rounded-full px-3 py-1 my-10 text-sm leading-6 text-gray-600 dark:text-gray-400 ring-1 ring-gray-900/10 dark:ring-gray-200/10 dark:hover:ring-gray-200/20 hover:ring-gray-900/20">
+            <div className="relative rounded-full px-3 py-1 my-10 text-sm leading-6 text-gray-400 ring-1 ring-gray-200/10 hover:ring-gray-200/20 ">
               Get notified when we launch.{" "}
-              <a
-                href="#email-form"
-                className="font-semibold text-blue-500 dark:text-yellow-400"
-              >
+              <a href="#email-form" className="font-semibold text-yellow-400">
                 <span className="absolute inset-0" aria-hidden="true" />
                 I&apos;m interested <span aria-hidden="true">&rarr;</span>
               </a>

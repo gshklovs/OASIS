@@ -30,7 +30,7 @@ export default function Navbar() {
         <div className="flex lg:hidden">
           <button
             type="button"
-            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-900 dark:invert"
+            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-900 invert"
             onClick={() => setMobileMenuOpen(true)}
           >
             <span className="sr-only">Open main menu</span>
@@ -42,7 +42,7 @@ export default function Navbar() {
             <a
               key={item.name}
               href={item.href}
-              className="text-sm dark:invert font-semibold leading-6 text-gray-900"
+              className="text-sm invert font-semibold leading-6 text-gray-900"
             >
               {item.name}
             </a>

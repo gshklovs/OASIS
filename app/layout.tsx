@@ -25,7 +25,7 @@ export default function RootLayout({
           aria-hidden="true"
         >
           <div
-            className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tl dark:from-blue-600 dark:to-blue-900 from-blue-300 to-blue-700 opacity-40 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
+            className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tl from-blue-600 to-blue-900 opacity-40 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
             style={{
               clipPath:
                 "polygon(13% 30%, 15% 15%, 43% 12%, 85% 0%, 85% 15%, 44% 30%, 100% 85%, 51% 65%, 85% 100%, 33% 83%, 28% 48%, 0% 85%)",
