@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  /* --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255; */
+  --background-start-rgb: 255, 255, 255;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 30, 30, 30;
+    --background-end-rgb: 30, 30, 30;
+  }
+}
+
+@font-face {
+  font-family: "ATYRE-logo-font";
+  src: url("../public/Fonts/ATYRE-logo-font/static/ATYRE-logo-font.ttf");
+  font-family: "montserrat";
+  src: url("../public/Fonts/Montserrat/static/Montserrat-Regular.ttf");
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    no-repeat;
+  background-color: rgb(var(--background-start-rgb));
+  background-size: 100% 100vh;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* * {
+  outline: 1px solid red;
+} */
