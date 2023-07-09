@@ -20,7 +20,7 @@ export default function Home() {
     <div className="relative w-screen overflow-x-clip isolate px-6 pt-14 lg:px-8">
       <div className="lg:absolute bg-green-40 relative lg:ml-8 lg:mr-auto mx-auto max-w-2xl my-16 sm:my-28 lg:my-36 ">
         <div className="text-left">
-          <h1 className="text-4xl font-montserrat font-bold tracking-tight text-gray-900 invert sm:text-6xl">
+          <h1 className="text-4xl font-montserrat font-bold tracking-tight text-orange-100  sm:text-6xl">
             {/* Your apparel shopper, Your apparel, your way, Wear your confidence */}
             Wear your confidence
             {/* We&apos;d love to learn from you. Express your interest in helping us shape the future of  */}

@@ -86,7 +86,7 @@ export default function HowItWorks() {
         <h2 className="text-base font-semibold leading-7 text-blue-500">
           Shop with confidence
         </h2>
-        <p className="mt-2 text-3xl font-bold tracking-tight invert font-montserrat text-gray-900 sm:text-4xl">
+        <p className="mt-2 text-3xl font-bold tracking-tight font-montserrat text-orange-100 sm:text-4xl">
           We deliver the perfect fit
         </p>
         <p className="mt-6 text-lg leading-8 text-gray-400">
@@ -99,7 +99,7 @@ export default function HowItWorks() {
           {features.map((feature) => (
             <div key={feature.name} className="relative pl-16">
               <dt className="text-base font-semibold leading-7 text-gray-200 ">
-                <div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-blue-600">
+                <div className="absolute select-none left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-blue-600">
                   {feature.icon}
                 </div>
                 {feature.name}

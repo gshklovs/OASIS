@@ -1,4 +1,46 @@
+"use client";
+import { AnyRecord } from "dns";
 import { useEffect, useState } from "react";
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+import {
+  getFirestore,
+  collection,
+  getDocs,
+  addDoc,
+} from "firebase/firestore/lite";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyCHtJ01EyGQfe8R2QEnTstzRHY6ho4jV4Y",
+  authDomain: "landing-page-15ddc.firebaseapp.com",
+  projectId: "landing-page-15ddc",
+  storageBucket: "landing-page-15ddc.appspot.com",
+  messagingSenderId: "41840832640",
+  appId: "1:41840832640:web:91b88c9669cbd23a0ab665",
+  measurementId: "G-VVKW2TJ3EY",
+};
+
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
+
+async function getEmails(db: any) {
+  const emailsCol = collection(db, "interested-emails");
+  const emailsSnapshot = await getDocs(emailsCol);
+  const emailsList = emailsSnapshot.docs.map((doc) => doc.data());
+  return emailsList;
+}
+
+async function addEmail(db: any, email: string) {
+  try {
+    const docRef = await addDoc(collection(db, "interested-emails"), {
+      email: email,
+    });
+
+    console.log("Document written with ID: ", docRef.id);
+  } catch (e) {
+    console.error("Error adding document: ", e);
+  }
+}
 
 export default function EmailForm() {
   const [email, setEmail] = useState("");
@@ -6,9 +48,13 @@ export default function EmailForm() {
   const handleSubmit = (e: any) => {
     e.preventDefault();
     console.log(email);
-    // addEmail(db, email);
+    addEmail(db, email);
     setEmail("");
   };
+
+  useEffect(() => {
+    getEmails(db).then((emails) => console.log(emails));
+  }, []);
 
   return (
     <div
