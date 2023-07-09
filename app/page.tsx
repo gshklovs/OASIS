@@ -29,7 +29,7 @@ export default function Home() {
             We deliver the clothes you want, and return what you don&apos;t, all
             from the comfort of your home.
           </p>
-          <div className="hidden sm:mb-8 sm:flex sm:justify-center">
+          <div className="sm:mb-8 sm:flex sm:justify-center">
             <div className="relative rounded-full px-3 py-1 my-10 text-sm leading-6 text-gray-400 ring-1 ring-gray-200/10 hover:ring-gray-200/20 ">
               Get notified when we launch.{" "}
               <a href="#email-form" className="font-semibold text-yellow-400">
