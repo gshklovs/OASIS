@@ -68,7 +68,8 @@ export default function EmailForm() {
               Get notified when we&rsquo;re launching
             </h2>
             <p className="mt-4 text-lg leading-8 text-gray-300">
-              Sign up to be the first on the waiting list.
+              Sign up to receive updates on our progress and be the first on the
+              waiting list.
             </p>
             <form
               className="my-6 mx-auto flex max-w-md gap-x-4"
@@ -92,7 +93,7 @@ export default function EmailForm() {
                 type="submit"
                 className="flex-none rounded-md bg-gray-100 px-3.5 py-2.5 text-sm font-semibold text-black shadow-sm hover:bg-gray-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500"
               >
-                I&apos;m interested
+                Notify Me
               </button>
             </form>
           </div>
