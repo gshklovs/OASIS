@@ -86,7 +86,7 @@ export default function HowItWorks() {
         <h2 className="text-base font-semibold leading-7 text-blue-500">
           Shop with confidence
         </h2>
-        <p className="mt-2 text-3xl font-bold tracking-tight font-montserrat text-orange-100 sm:text-4xl">
+        <p className="mt-2 text-3xl font-bold tracking-tight font-montserrat text-gray-200 sm:text-4xl">
           We deliver the perfect fit
         </p>
         <p className="mt-6 text-lg leading-8 text-gray-400">

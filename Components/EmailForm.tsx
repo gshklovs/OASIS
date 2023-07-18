@@ -1,14 +1,8 @@
 "use client";
-import { AnyRecord } from "dns";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
-import {
-  getFirestore,
-  collection,
-  getDocs,
-  addDoc,
-} from "firebase/firestore/lite";
+import { getFirestore, collection, addDoc } from "firebase/firestore/lite";
 
 const firebaseConfig = {
   apiKey: "AIzaSyCHtJ01EyGQfe8R2QEnTstzRHY6ho4jV4Y",
@@ -22,13 +16,6 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
-
-async function getEmails(db: any) {
-  const emailsCol = collection(db, "interested-emails");
-  const emailsSnapshot = await getDocs(emailsCol);
-  const emailsList = emailsSnapshot.docs.map((doc) => doc.data());
-  return emailsList;
-}
 
 async function addEmail(db: any, email: string) {
   try {
@@ -52,13 +39,9 @@ export default function EmailForm() {
     setEmail("");
   };
 
-  useEffect(() => {
-    getEmails(db).then((emails) => console.log(emails));
-  }, []);
-
   return (
     <div
-      className="relative my-20 rounded-3xl isolate overflow-hidden bg-gray-900 py-16 sm:py-24 lg:py-32"
+      className="relative mt-20 rounded-3xl isolate overflow-hidden bg-gray-900 py-16 sm:py-24 lg:py-32"
       id="email-form"
     >
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -104,7 +87,7 @@ export default function EmailForm() {
         aria-hidden="true"
       >
         <div
-          className="aspect-[1155/678] w-[72.1875rem] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30"
+          className="aspect-[1155/678] w-[72.1875rem] bg-gradient-to-tr from-teal-200 to-teal-300 opacity-30"
           style={{
             clipPath:
               "polygon(36% 53%, 60% 44%, 83% 64%, 63% 83%, 70% 100%, 30% 100%, 38% 85%, 21% 68%)",
