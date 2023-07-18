@@ -77,12 +77,16 @@ export default function FAQMessage(props: any) {
   };
 
   const sendAnswer = async (answer: string) => {
+    const username = window.prompt("Enter your username:");
+    const password = window.prompt("Enter your password:");
+
     const response = await fetch(
       `http://127.0.0.1:8080/questions/answer/${props.id}`,
       {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
+          Authorization: "Basic " + btoa(`${username}:${password}`),
         },
         body: answer,
       },

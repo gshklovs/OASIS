@@ -60,8 +60,13 @@ export default function FaqPage(props: any) {
   };
 
   const clearMessageHandler = async () => {
+    const username = window.prompt("Enter your username:");
+    const password = window.prompt("Enter your password:");
     let response = await fetch("http://127.0.0.1:8080/questions/clear", {
       method: "DELETE",
+      headers: {
+        Authorization: "Basic " + btoa(username + ":" + password),
+      },
     });
     if (response.ok) {
       setMessages([]);
