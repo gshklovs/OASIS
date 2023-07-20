@@ -10,7 +10,7 @@ export default function FAQMessage(props: any) {
 
   const sendUpvote = async () => {
     const response = await fetch(
-      `http://127.0.0.1:8080/api/messages/${props.id}/upvote`,
+      `http://chat-backendv5-env.eba-yuqyrpqg.us-east-2.elasticbeanstalk.com/api/messages/${props.id}/upvote`,
       {
         method: "PUT",
       },
@@ -25,7 +25,7 @@ export default function FAQMessage(props: any) {
 
   const sendDownvote = async () => {
     const response = await fetch(
-      `http://127.0.0.1:8080/api/messages/${props.id}/downvote`,
+      `http:/chat-backendv5-env.eba-yuqyrpqg.us-east-2.elasticbeanstalk.com/api/messages/${props.id}/downvote`,
       {
         method: "PUT",
       },

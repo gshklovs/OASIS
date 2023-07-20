@@ -13,9 +13,12 @@ export default function FaqPage(props: any) {
 
   const [messages, setMessages] = useState<Message[]>([]);
   const getQuestions = async () => {
-    let response = await fetch("http://127.0.0.1:8080/questions/all", {
-      method: "GET",
-    });
+    let response = await fetch(
+      "http://chat-backendv5-env.eba-yuqyrpqg.us-east-2.elasticbeanstalk.com/questions/all",
+      {
+        method: "GET",
+      },
+    );
     if (response.ok) {
       const messages = await response.json();
       console.log(messages);
@@ -35,13 +38,16 @@ export default function FaqPage(props: any) {
   }, []);
 
   const sendQuestion = async () => {
-    let response = await fetch("http://127.0.0.1:8080/questions/ask", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
+    let response = await fetch(
+      "http://chat-backendv5-env.eba-yuqyrpqg.us-east-2.elasticbeanstalk.com/questions/ask",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: message,
       },
-      body: message,
-    });
+    );
 
     if (response.ok) {
       const data = await response.json();
