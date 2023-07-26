@@ -6,11 +6,7 @@ import { useState, useEffect } from "react";
 import Logo from "@/Components/logo";
 
 export default function Navbar() {
-  const navigation = [
-    { name: "Home", href: "./" },
-    { name: "Blog", href: "#" },
-    { name: "Contact", href: "./contact" },
-  ];
+  const navigation = [{ name: "Home", href: "./" }];
   // uncomment for scroll background
   // const [isScrolled, setIsScrolled] = useState(false);
 

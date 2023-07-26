@@ -9,17 +9,13 @@ import HowItWorks from "@/Components/Home/HowItWorks";
 import EmailForm from "@/Components/EmailForm";
 
 export default function Home() {
-  const navigation = [
-    { name: "Home", href: "./home" },
-    { name: "Blog", href: "#" },
-    { name: "Contact", href: "./contact" },
-  ];
+  const navigation = [{ name: "Home", href: "./home" }];
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <div className="relative w-screen overflow-x-clip isolate px-6 pt-8 lg:px-8">
-      <div className="lg:absolute bg-green-40 relative lg:ml-8 lg:mr-auto mx-auto max-w-2xl my-16 sm:my-28 lg:my-36 ">
-        <div className="text-left">
+    <div className="relative w-screen overflow-x-clip isolate px-6 py-8 lg:px-8">
+      <div className="bg-green-40 relative mx-auto lg:max-w-4xl max-w-2xl my-12 sm:my-18 lg:my-24 ">
+        <div className="text-center">
           <h1 className="text-4xl font-montserrat font-bold tracking-tight text-amber-50  sm:text-6xl">
             Simple, Smart, and Reliable
             {/* No more nuisance. Make Home your OASIS. */}
@@ -53,18 +49,9 @@ export default function Home() {
           }}
         />
       </div>
-      <Hero />
+      {/* <Hero /> */}
       <HowItWorks />
       <EmailForm />
-      <div className="sm:mb-8 text-center sm:flex sm:justify-center">
-        <div className="relative rounded-full px-3 py-1 mt-12 mb-12 text-sm leading-6 text-gray-400 ring-1 ring-gray-200/10 hover:ring-gray-200/20 ">
-          Tell us what you think.{" "}
-          <a href="./faq" className="font-semibold text-teal-300">
-            <span className="absolute inset-0" aria-hidden="true" />
-            Send a message <span aria-hidden="true">&rarr;</span>
-          </a>
-        </div>
-      </div>
     </div>
   );
 }
