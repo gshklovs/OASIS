@@ -6,9 +6,10 @@ import Navbar from "@/Components/Navbar";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "OASIS - Shop Effortlessly",
-  description: `At OASIS, we can't choose the clothes you like, but we can return the ones you don't.
+  title: "OASIS Returns - Shop Effortlessly",
+  description: `At OASIS, we can't choose the clothes you like, but we can return the clothes you don't.
   Find out how we garuntee an effortless shopping experience: `,
+  keywords: "",
 };
 
 export default function RootLayout({
