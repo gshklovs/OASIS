@@ -17,14 +17,14 @@ export default function Home() {
       <div className="bg-green-40 relative mx-auto lg:max-w-4xl max-w-2xl my-12 sm:my-18 lg:my-24 ">
         <div className="text-center">
           <h1 className="text-4xl font-montserrat font-bold tracking-tight text-amber-50  sm:text-6xl">
-            Simple, Smart, and Reliable
+            Finding clothes that fit, feel, and look the way you want can be a
+            chore.
             {/* No more nuisance. Make Home your OASIS. */}
             {/* Wear your confidence */}
             {/* We&apos;d love to learn from you. Express your interest in helping us shape the future of  */}
           </h1>
           <p className=" mt-6 text-lg leading-8 text-gray-400">
-            We deliver the clothes you want, and return what you don&apos;t, all
-            from the comfort of your home.
+            Returning the clothes you don&apos;t want can be a bigger burden.
           </p>
           <div className="sm:mb-8 sm:flex sm:justify-center">
             <div className="relative rounded-full px-3 py-1 my-10 text-sm leading-6 text-gray-400 ring-1 ring-gray-200/10 hover:ring-gray-200/20 ">

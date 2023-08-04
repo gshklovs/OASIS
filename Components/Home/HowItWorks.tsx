@@ -5,9 +5,9 @@ import Image from "next/image";
 export default function HowItWorks() {
   const features = [
     {
-      name: "One-click purchase",
+      name: "1.",
       description:
-        "Find us on your favorite apparel websites and use our extension to buy the clothes you want with one click.",
+        "1. Select the clothes you want on your favorite shopping sites",
       icon: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -26,9 +26,8 @@ export default function HowItWorks() {
       ),
     },
     {
-      name: "Delivered on-demand",
-      description:
-        "Get your items delivered to your doorstep in 4 hours or less.",
+      name: "2.",
+      description: `2. Click "try with OASIS" at checkout`,
       icon: (
         <div className="invert">
           <Image
@@ -42,9 +41,9 @@ export default function HowItWorks() {
       ),
     },
     {
-      name: "Try before you buy",
+      name: "3.",
       description:
-        "We'll send you the clothes you want to try on, and you only pay for what you keep.",
+        "3. Once the clothes arrive, try the clothes on from the comfort of your home",
       icon: (
         <div className="invert">
           <Image
@@ -58,9 +57,8 @@ export default function HowItWorks() {
       ),
     },
     {
-      name: "Free returns",
-      description:
-        "We'll send someone to pick up your order once you've decided what you want to keep. No shipping fees, no labels, no hassle.",
+      name: "4. ",
+      description: `4. Go to the verification email and click "return" to get the clothes you don't want pick up from home in 15 minutes or less`,
       icon: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -84,14 +82,15 @@ export default function HowItWorks() {
     <div className="mx-auto max-w-7xl px-6 lg:px-8">
       <div className="mx-auto max-w-2xl lg:text-center">
         <h2 className="text-base font-semibold leading-7 text-blue-500">
-          Shop with confidence
+          Shipping labels, lost receipts, and post office detours don&apos;t
+          make it any easier.
         </h2>
         <p className="mt-2 text-3xl font-bold tracking-tight font-montserrat text-gray-200 sm:text-4xl">
-          We deliver the perfect fit
+          At OASIS, we can&apos;t choose the clothes you like, but we can return
+          the ones you don&apos;t.
         </p>
         <p className="mt-6 text-lg leading-8 text-gray-400">
-          Order as many clothing items as you want, get them delivered to your
-          door in an hour, try them on, and only pay for what you keep.
+          Here&apos;s how we guarantee an effortless shopping experience:
         </p>
       </div>
       <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">

@@ -48,11 +48,10 @@ export default function EmailForm() {
         <div className="mx-auto max-w-2xl lg:max-w-none">
           <div className="mx-auto text-center max-w-2xl lg:max-w-2xl">
             <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-              Get notified when we&rsquo;re launching
+              Interested?
             </h2>
             <p className="mt-4 text-lg leading-8 text-gray-300">
-              Sign up to receive updates on our progress and be the first on the
-              waiting list.
+              Enter your email below to talk to our founders:
             </p>
             <form
               className="my-6 mx-auto flex max-w-md gap-x-4"
