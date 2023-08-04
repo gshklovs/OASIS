@@ -24,7 +24,7 @@ export default function Home() {
             {/* We&apos;d love to learn from you. Express your interest in helping us shape the future of  */}
           </h1>
           <p className=" mt-6 text-lg leading-8 text-gray-400">
-            Returning the clothes you don&apos;t want can be a bigger burden.
+            Returning the clothes you don&apos;t want is a bigger burden.
           </p>
           <div className="sm:mb-8 sm:flex sm:justify-center">
             <div className="relative rounded-full px-3 py-1 my-10 text-sm leading-6 text-gray-400 ring-1 ring-gray-200/10 hover:ring-gray-200/20 ">
