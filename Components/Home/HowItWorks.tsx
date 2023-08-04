@@ -5,9 +5,9 @@ import Image from "next/image";
 export default function HowItWorks() {
   const features = [
     {
-      name: "1.",
+      name: "1. Buy",
       description:
-        "1. Select the clothes you want on your favorite shopping sites",
+        "Select the clothes you want on your favorite shopping sites",
       icon: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -26,8 +26,8 @@ export default function HowItWorks() {
       ),
     },
     {
-      name: "2.",
-      description: `2. Click "try with OASIS" at checkout`,
+      name: "2. Only pay for what you like",
+      description: `Click "try with OASIS" at checkout`,
       icon: (
         <div className="invert">
           <Image
@@ -41,7 +41,7 @@ export default function HowItWorks() {
       ),
     },
     {
-      name: "3.",
+      name: "3. Try",
       description:
         "3. Once the clothes arrive, try the clothes on from the comfort of your home",
       icon: (
@@ -57,8 +57,8 @@ export default function HowItWorks() {
       ),
     },
     {
-      name: "4. ",
-      description: `4. Go to the verification email and click "return" to get the clothes you don't want pick up from home in 15 minutes or less`,
+      name: "4. We'll take care of the rest",
+      description: `4. Go to the verification email and click "return" to get the clothes you don't want picked up from home in 15 minutes or less`,
       icon: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
