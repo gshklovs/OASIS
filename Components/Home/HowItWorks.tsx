@@ -43,7 +43,7 @@ export default function HowItWorks() {
     {
       name: "3. Try",
       description:
-        "3. Once the clothes arrive, try the clothes on from the comfort of your home",
+        "Once the clothes arrive, try the clothes on from the comfort of your home",
       icon: (
         <div className="invert">
           <Image
@@ -58,7 +58,7 @@ export default function HowItWorks() {
     },
     {
       name: "4. We'll take care of the rest",
-      description: `4. Go to the verification email and click "return" to get the clothes you don't want picked up from home in 15 minutes or less`,
+      description: `Go to the verification email and click "return" to get the clothes you don't want picked up from home in 15 minutes or less`,
       icon: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
